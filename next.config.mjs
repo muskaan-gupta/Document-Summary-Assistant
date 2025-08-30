@@ -2,9 +2,8 @@
 const nextConfig = {
   experimental: {
   outputFileTracingRoot: process.cwd(),
-}
+},
  
-
   webpack: (config) => {
     // Fix for PDF.js in Next.js
     config.resolve.alias.canvas = false;
