@@ -10,7 +10,7 @@
   opacity: 1;
   transform: translateY(0);
   transition: all var(--transition-slow);
-  color: #80aaed; /* Dark text for contrast */
+  color: #00050d; /* Dark text for contrast */
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
@@ -104,13 +104,13 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-3xl);
   align-items: center;
-  color: #ffffff;
+  color: #040404;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .upload-content-left {
   text-align: left;
-  color: #ffffff;
+  color: #000000;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -137,7 +137,7 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  color: #01070f;
+  color: #075fd3;
   font-size: 0.95rem;
   font-weight: 500;
 }
@@ -342,19 +342,19 @@
   .summary-text {
     background: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    color: #fff9f9 !important;
+    color: #080808 !important;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
   
   .summary-result {
     background: transparent !important;
-    color: #f1f5f9 !important;
+    color: #010101 !important;
   }
   
   .summary-content-area {
     background: transparent !important;
-    color: #f1f5f9 !important;
+    color: #000000 !important;
   }
   
   .summary-display-container {
@@ -363,7 +363,7 @@
   
   .summary-pane {
     background: transparent !important;
-    color: #f1f5f9 !important;
+    color: #000000 !important;
   }
   
   .document-pane {
@@ -376,7 +376,7 @@
   }
   
   .document-header {
-    background: rgba(255, 255, 255, 0.1) !important;
+    background: rgba(232, 227, 227, 0.1) !important;
     border-bottom-color: rgba(255, 255, 255, 0.2) !important;
     color: #f1f5f9 !important;
     -webkit-backdrop-filter: blur(10px);
@@ -386,7 +386,7 @@
   .summary-header {
     background: rgba(255, 255, 255, 0.1) !important;
     border-bottom-color: rgba(255, 255, 255, 0.2) !important;
-    color: #f1f5f9 !important;
+    color: #000000 !important;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
@@ -535,7 +535,7 @@
 
 .summarize-description {
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #020009;
   margin-bottom: var(--spacing-xl);
   line-height: 1.6;
   font-weight: 500;
@@ -1707,9 +1707,9 @@
     min-height: 100svh;
     padding: 0;
     background: linear-gradient(135deg, 
-      rgba(15, 23, 42, 0.98) 0%, 
-      rgba(30, 41, 59, 0.95) 50%,
-      rgba(15, 23, 42, 0.98) 100%) !important;
+      rgba(212, 194, 234, 0.98) 0%, 
+      rgba(217, 187, 245, 0.95) 50%,
+      rgba(212, 185, 240, 0.98) 100%) !important;
     display: flex;
     align-items: stretch;
   }
