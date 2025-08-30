@@ -1,8 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Document Summary Assistant
 
-## Getting Started
+Document Summary Assistant is an AI-powered web application built with Next.js that transforms your documents and images into actionable insights. Upload PDFs, images, Word documents, text files, and more to get smart summaries, key points, and improvement suggestions in seconds.
 
-First, run the development server:
+## Features
+
+- Upload PDFs, images (JPEG, PNG, GIF, BMP, SVG), Word documents, text files, markdown, and other supported formats.
+- AI-powered summarization using Google Gemini AI with OCR capabilities.
+- Choose summary length: short (2-3 sentences), medium (1-2 paragraphs), or long (3-4 paragraphs).
+- Inline document preview for PDFs, images, and text files.
+- Privacy-first approach: no document or history storage.
+- Fast and user-friendly interface with drag-and-drop upload.
+
+## Supported File Types
+
+- PDF (.pdf)
+- Word (.doc, .docx)
+- Text (.txt, .md, .csv, .rtf)
+- Images (.jpeg, .jpg, .png, .gif, .bmp, .webp, .svg)
+- JSON, XML, and other common document formats
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd document-summary-assistant
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Set up environment variables:
+
+Create a `.env.local` file in the root directory and add your Google Gemini API key:
+
+```
+GOOGLE_GEMINI_API_KEY=your_api_key_here
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +54,22 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to use the app.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Upload your document or image using the drag-and-drop area or file browser.
+- Choose the desired summary length (short, medium, or long).
+- View the AI-generated summary alongside an inline preview of your document.
+- Download the original file if needed.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org) - React framework for server-side rendering and static site generation.
+- [Google Generative AI](https://cloud.google.com/generative-ai) - AI model for document summarization.
+- [Tesseract.js](https://github.com/naptha/tesseract.js) - OCR for text extraction from images.
+- [pdfjs-dist](https://github.com/mozilla/pdf.js) - PDF rendering and parsing.
+- React and modern JavaScript/TypeScript.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
