@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  outputFileTracingRoot: "C:\\Users\\hp\\OneDrive\\Documents\\document-summary-assistant",
+  experimental: {
+  outputFileTracingRoot: process.cwd(),
+}
+ 
 
   webpack: (config) => {
     // Fix for PDF.js in Next.js
