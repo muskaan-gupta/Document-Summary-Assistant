@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Button from '@/components/Button';
-import UploadArea from '@/components/UploadArea';
+import Button from '@/Components/Button';
+import UploadArea from '@/Components/UploadArea';
 
 export default function HomePage() {
   return (

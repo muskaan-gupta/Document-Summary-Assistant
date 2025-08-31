@@ -373,42 +373,9 @@ export default function SummarizePage() {
   };
 
   return (
-    <div className={`summarize-page ${isEntering ? 'page-entering' : ''}`}>
-      {/* Step 1: Upload (when no file uploaded yet) */}
-      {currentStep === 'upload' && (
-        <section className="summarize-hero">
-          <div className="container">
-            <div className="summarize-content upload-layout">
-              <div className="upload-content-left">
-                <h1 className="summarize-title">Upload Your Document or Image</h1>
-                <p className="summarize-description">
-                  Drop your document or image here or click to browse. Supports PDF, images (JPG, PNG), Word, text, markdown, and more. 
-                  Our AI will analyze and create an intelligent summary for you.
-                </p>
-                <div className="upload-features">
-                  <div className="feature-item">
-                    <span className="feature-icon">📄</span>
-                    <span>PDF, Word, Text files</span>
-                  </div>
-                  <div className="feature-item">
-                    <span className="feature-icon">📚</span>
-                    <span>Images & Scanned documents</span>
-                  </div>
-                  <div className="feature-item">
-                    <span className="feature-icon">⚡</span>
-                    <span>Fast AI processing with OCR</span>
-                  </div>
-                </div>
-              </div>
-              <div className="upload-content-right">
-                <UploadArea onFileUpload={handleNewFileUpload} />
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
+    
 
-      {/* Step 2: Configure summary options */}
+      {/* Step 1: Configure summary options */}
       {currentStep === 'configure' && animationData && (
         <section className="summarize-hero">
           <div className="container">
@@ -455,12 +422,11 @@ export default function SummarizePage() {
                 </div>
 
                 <div className="configure-actions">
-                  <button 
-                    className="btn btn--outline btn--small back-btn"
-                    onClick={() => setCurrentStep('upload')}
-                  >
+                <Link href="/">
+                  <Button  className="btn btn--outline btn--small back-btn">
                     ← Choose Different File
-                  </button>
+                  </Button>
+                </Link>
                 </div>
               </div>
 
@@ -509,7 +475,7 @@ export default function SummarizePage() {
         </section>
       )}
 
-      {/* Step 3: Processing */}
+      {/* Step 2: Processing */}
       {currentStep === 'processing' && animationData && (
         <section className="summarize-hero">
           <div className="container">
@@ -537,7 +503,7 @@ export default function SummarizePage() {
         </section>
       )}
 
-      {/* Step 4: Split-pane Results Layout */}
+      {/* Step 3: Split-pane Results Layout */}
       {currentStep === 'result' && animationData && (
         <div className={`split-layout ${mobileView === 'document' ? 'mobile-show-document' : 'mobile-show-summary'}`}>
           {/* Left Pane - Document Viewer */}
