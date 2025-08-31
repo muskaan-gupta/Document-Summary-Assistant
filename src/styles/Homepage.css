@@ -100,7 +100,7 @@
   padding: var(--spacing-xl);
   border-radius: var(--radius-lg);
   text-align: center;
-  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+  box-shadow: 0 4px 12px rgba(163, 130, 222, 0.1);
   border: none;
   transition: all var(--transition-normal);
   position: relative;
@@ -113,7 +113,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3.5px;
   background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
   transform: scaleX(0);
   transition: transform var(--transition-normal);
@@ -140,7 +140,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3.5px;
   background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
   transform: scaleX(0);
   transition: transform var(--transition-normal);
@@ -149,7 +149,7 @@
 
 .feature-card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.3);
+  box-shadow: 0 12px 30px rgba(100, 53, 183, 0.3);
   z-index: 10;
 }
 
@@ -163,9 +163,9 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
+  width: 80px;
+  height: 70px;
+  border-radius: 10px;
   color: #000000;
   transition: transform 0.3s ease;
 }
