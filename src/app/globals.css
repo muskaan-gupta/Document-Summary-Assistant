@@ -25,7 +25,7 @@
   --border-color: #e2e8f0;
   
   --text-primary: #1e293b;
-  --text-secondary: #64748b;
+  --text-secondary: #536174;
   --text-muted: #94a3b8;
   
   --success-color: #10b981;
@@ -67,17 +67,7 @@
 }
 
 /* Dark theme support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #0f172a;
-    --surface-color: #1e293b;
-    --border-color: #334155;
-    
-    --text-primary: #f1f5f9;
-    --text-secondary: #cbd5e1;
-    --text-muted: #64748b;
-  }
-}
+
 
 /* Reset and Base Styles */
 * {

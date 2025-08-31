@@ -82,7 +82,7 @@
   width: 180%;
   height: 180%;
   background: radial-gradient(circle at center, 
-    rgba(98, 101, 251, 0.15) 0%, 
+    rgba(53, 56, 239, 0.15) 0%, 
     transparent 60%);
   animation: float 25s ease-in-out infinite;
   z-index: 0;
@@ -104,7 +104,7 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-3xl);
   align-items: center;
-  color: #040404;
+  color: #796f6f;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -321,7 +321,7 @@
 .back-btn {
   background: rgba(255, 249, 249, 0.1) !important;
   border: 1px solid rgba(159, 101, 245, 0.3) !important;
-  color: #0356bc !important;
+  color: #010811 !important;
   padding: var(--spacing-sm) var(--spacing-lg) !important;
   font-size: 0.9rem !important;
 }
@@ -342,19 +342,19 @@
   .summary-text {
     background: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    color: #080808 !important;
+    color: #9d9999 !important;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
   
   .summary-result {
     background: transparent !important;
-    color: #010101 !important;
+    color: #7c7676 !important;
   }
   
   .summary-content-area {
     background: transparent !important;
-    color: #000000 !important;
+    color: #9a9595 !important;
   }
   
   .summary-display-container {
@@ -363,7 +363,7 @@
   
   .summary-pane {
     background: transparent !important;
-    color: #000000 !important;
+    color: #777575 !important;
   }
   
   .document-pane {
@@ -386,7 +386,7 @@
   .summary-header {
     background: rgba(255, 255, 255, 0.1) !important;
     border-bottom-color: rgba(255, 255, 255, 0.2) !important;
-    color: #000000 !important;
+    color: #257bd7 !important;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
@@ -527,7 +527,7 @@
 }
 
 .upload-layout .summarize-title {
-  background: linear-gradient(135deg, #ffffff 0%, #60a5fa 100%);
+  background: linear-gradient(135deg, #200493 0%, #60a5fa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -773,7 +773,7 @@
 
 .upload-note {
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: var(--text-primary);
   padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--surface-color);
   border-radius: var(--radius-sm);
@@ -855,7 +855,7 @@
 .summary-option.active,
 .summary-option:focus {
   border-color: var(--primary-color);
-  background: var(--primary-color);
+  background: var(rgb(193, 224, 238));
   color: white;
   box-shadow: var(--shadow-lg);
 }
