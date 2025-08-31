@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import UploadArea from '@/components/UploadArea';
+import UploadArea from '@/Components/UploadArea';
 
 // Inline DocumentViewer component for the left pane
 function DocumentViewer({ fileData, fileName, fileType }) {
