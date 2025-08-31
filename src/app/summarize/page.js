@@ -373,8 +373,7 @@ export default function SummarizePage() {
   };
 
   return (
-    
-
+    <div className={`summarize-page ${isEntering ? 'page-entering' : ''}`}>
       {/* Step 1: Configure summary options */}
       {currentStep === 'configure' && animationData && (
         <section className="summarize-hero">
