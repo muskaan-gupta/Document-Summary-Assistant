@@ -55,8 +55,11 @@ yarn dev
 # or
 pnpm dev
 ```
+## Preview:
+<img width="1827" height="732" alt="image" src="https://github.com/user-attachments/assets/d5263ac9-3512-4929-8589-b2b3c0fae5ea" />
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to use the app.
+
+Open [https://document-summary-assistant-seven.vercel.app/] in your browser to use the app.
 
 ## Usage
 
